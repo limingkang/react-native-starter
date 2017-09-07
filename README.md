@@ -8,7 +8,7 @@ This project currently uses these dependencies:
 
 
 ## How to run it
-1. 正常安装好react-native环境进入test目录
+1. 正常安装好react-native环境(模拟器打开，adb连接上了)进入test目录
 2. yarn install
 3. react-native link
 4. react-native run-android / run-ios
@@ -31,5 +31,5 @@ Error:Execution failed for task ':app:processDebugResources'java.io.IOException:
 找到我们项目下的android/gradle/wrapper/gradle-wrapper.properties文件     
 设置变量distributionUrl=file\:///D:/gradle/gradle-2.14.1-all.zip，注意装的版本,这是我的安装地址      
 3.编译时候提示@Override不能覆盖...      
-找到app/src/main/java/com/test/MyReactPackage.java注释掉@Override，这是由于jdk版本问题1.5以上没事，所以最好不要注释升级jdk就行       
+找到app/src/main/java/com/test/MyReactPackage.java注释掉@Override，这是由于jdk版本问题1.5以上没事，所以最好不要注释,升级jdk就行;注释之后模拟器上可以正常运行安装，但是打包安装的时候可能有问题        
 app/src/main里面存放了一些底层原生需要使用的启动图和启动样式xml文件不要胡乱删除        
