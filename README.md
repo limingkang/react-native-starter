@@ -13,14 +13,14 @@ This project currently uses these dependencies:
 3. react-native link
 4. react-native run-android / run-ios
 
-##介绍
+## 介绍
 react-native-deprecated-custom-components用来做大的导航路由直接跳转到一个大全新的页面
 react-native-scrollable-tab-view用来做动画切换tap页的
 react-native-tab-navigator用来给每个大页面下面做底部导航路由的
 由于没有mac导致ios没有引入，请自行引入文件测试
 
 
-##运行时候常见问题
+## 运行时候常见问题
 1.react-native link关联原生图标的时候：
 Error:Execution failed for task ':app:processDebugResources'java.io.IOException: Could not delete...
 	From your react native folder run:	cd android && gradlew clean
